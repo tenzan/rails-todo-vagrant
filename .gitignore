@@ -1,0 +1,8 @@
+
+logs
+state
+.DS_Store
+.vagrant
+.idea/
+packages/
+*.log
