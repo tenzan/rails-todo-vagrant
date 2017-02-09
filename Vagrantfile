@@ -35,7 +35,7 @@ Vagrant.configure(2) do |config|
     config.vm.define :ui do |ui|
       ui.vm.hostname = "ui"
       ui.vm.network "private_network", ip: "10.20.30.101"
-      # ui.vm.provision "shell", path: "deployment/provision-ui.sh", privileged: false
+      ui.vm.provision "shell", path: "deployment/provision-ui.sh", privileged: false
     end
 
   end

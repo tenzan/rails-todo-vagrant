@@ -21,7 +21,6 @@ sudo -H -u ubuntu bash -i -c 'rbenv install 2.4.0'
 sudo -H -u ubuntu bash -i -c 'rbenv global 2.4.0'
 sudo -H -u ubuntu bash -i -c 'rbenv rehash'
 sudo -H -u ubuntu bash -i -c 'gem install bundler --no-ri --no-rdoc'
-sudo -H -u ubuntu bash -i -c 'rbenv rehash'
 
 sudo -H -u ubuntu bash -i -c 'curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -'
 sudo -H -u ubuntu bash -i -c 'rbenv rehash'
@@ -40,4 +39,4 @@ cd rails-todo-api
 sudo -H -u ubuntu bash -i -c 'rethinkdb &'
 sudo -H -u ubuntu bash -i -c 'bundle install'
 sudo -H -u ubuntu bash -i -c 'rails nobrainer:seed'
-sudo -H -u ubuntu bash -i -c 'rails s'
+sudo -H -u ubuntu bash -i -c 'rails s -d'
