@@ -6,3 +6,5 @@ state
 .idea/
 packages/
 *.log
+temp/
+rethinkdb_data/

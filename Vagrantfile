@@ -20,6 +20,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
   config.vm.synced_folder "~/apt-archives", "/var/cache/apt/archives/", create: true
+  config.vm.synced_folder "~/work/rails5/rails-todo-vagrant/temp/rails-todo-api", "/home/ubuntu/rails-todo-api", create: true
+  config.vm.synced_folder "~/work/rails5/rails-todo-vagrant/temp/ember-todo-ui", "/home/ubuntu/ember-todo-ui", create: true
 
     config.vm.provider "virtualbox" do |v|
       v.customize ["modifyvm", :id, "--memory", 2048]

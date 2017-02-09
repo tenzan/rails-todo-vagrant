@@ -34,9 +34,8 @@ cd
 
 git clone https://github.com/tenzan/rails-todo-api.git
 
-cd rails-todo-api
-
 sudo -H -u ubuntu bash -i -c 'rethinkdb &'
+cd rails-todo-api
 sudo -H -u ubuntu bash -i -c 'bundle install'
 sudo -H -u ubuntu bash -i -c 'rails nobrainer:seed'
 sudo -H -u ubuntu bash -i -c 'rails s -d'
